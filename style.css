@@ -1,44 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p>Professional Trainer | Your Experience</p>
-        </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <p>Briefly describe your experience as a trainer.</p>
-        </section>
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
-        <section class="colleges">
-            <h2>Colleges List</h2>
-            <table>
-                <tr>
-                    <th>College Name</th>
-                    <th>Years of Service</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td>Example College 1</td>
-                    <td>2020 - 2023</td>
-                    <td>City, State</td>
-                </tr>
-                <tr>
-                    <td>Example College 2</td>
-                    <td>2018 - 2020</td>
-                    <td>City, State</td>
-                </tr>
-            </table>
-        </section>
-    </div>
-</body>
-</html>
- 
+header {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.experience, .colleges {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #333;
+    color: white;
+}
