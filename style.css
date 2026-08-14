@@ -1,3 +1,7 @@
+/* ==============================
+   BASIC PAGE
+   ============================== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,6 +9,11 @@ body {
     padding: 0;
     color: #333;
 }
+
+
+/* ==============================
+   MAIN CONTAINER
+   ============================== */
 
 .container {
     max-width: 900px;
@@ -14,6 +23,11 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+
+/* ==============================
+   HEADER
+   ============================== */
 
 header {
     text-align: center;
@@ -33,10 +47,20 @@ header p {
     font-size: 18px;
 }
 
+
+/* ==============================
+   SECTIONS
+   ============================== */
+
 .experience,
 .colleges {
     margin-top: 30px;
 }
+
+
+/* ==============================
+   HEADINGS
+   ============================== */
 
 h2 {
     font-size: 24px;
@@ -47,10 +71,15 @@ h2 {
 }
 
 h3 {
-    margin-top: 25px;
+    margin-top: 30px;
     font-size: 20px;
     color: #333;
 }
+
+
+/* ==============================
+   TEXT
+   ============================== */
 
 p {
     line-height: 1.7;
@@ -65,6 +94,48 @@ ul {
 li {
     margin-bottom: 6px;
 }
+
+
+/* ==============================
+   EXPERIENCE + PHOTO
+   ============================== */
+
+.experience-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.experience-text {
+    flex: 1;
+}
+
+
+/* ==============================
+   TRAINER PHOTO
+   ============================== */
+
+.trainer-photo {
+    width: 190px;
+    height: 220px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.trainer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+}
+
+
+/* ==============================
+   TABLE
+   ============================== */
 
 table {
     width: 100%;
@@ -93,8 +164,13 @@ tr:hover {
     background-color: #eeeeee;
 }
 
-/* Mobile Responsive Design */
-@media (max-width: 600px) {
+
+/* ==============================
+   MOBILE RESPONSIVE
+   ============================== */
+
+@media (max-width: 700px) {
+
     .container {
         margin: 10px;
         padding: 15px;
@@ -114,6 +190,16 @@ tr:hover {
 
     h2 {
         font-size: 21px;
+    }
+
+    .experience-content {
+        flex-direction: column;
+    }
+
+    .trainer-photo {
+        width: 180px;
+        height: 210px;
+        margin: 10px auto 20px;
     }
 
     table {
